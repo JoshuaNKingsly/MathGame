@@ -21,16 +21,21 @@
         FirstNum = parseFloat(FirstNum);
             SecondNum = parseFloat(SecondNum);
         Ans = FirstNum - SecondNum;
-       document.getElementById('spAns').innerHTML = Ans;
+            document.getElementById('spAns').innerHTML = Ans;
       }
+        function fnClear(){
+            document.getElementById('txtnum1').value = '';
+            document.getElementById('txtnum2').value = '';
+            document.getElementById('spAns').innerHTML = '';
+        }
     </script>
 
 </head>
-<body onload="fnloadquestion()">
-    <h2 style ="text-align: center">Math</h2>
+<body >
+    <h2 style ="text-align: center">Math Game</h2>
     <div style="border:solid 2px blue; height:auto ; width:90%; margin-left: 5%">
         <div id="divmain">
-            <div id="divtrivia">
+            <div id="divMathGame">
                 <div style="margin-top:30px;margin-left:30px;margin-bottom:30px">
                     <span ></span><span >Calculate sum/product of 2 numbers</span>
                 </div>
@@ -48,6 +53,7 @@
                
                <input type="button" style="margin-left:20px;margin-top:20px" value="Add" onclick="fnAdd();">
                <input type="button" style="margin-left:20px;margin-top:20px" value="Subtract" onclick="fnSubtract();">
+                        <input type="button" style="margin-left:20px;margin-top:20px" value="Clear" onclick="fnClear();">
 
             </div>
 
