@@ -4,7 +4,25 @@
     <meta charset="utf-8" />
     <title>History Trivia</title>
     <script type="text/javascript">
+      function fnAdd(){
+      	let Ans=0;
+        let  FirstNum = document.getElementById('txtnum1').value;
+        let  SecondNum = document.getElementById('txtnum2').value;
+        FirstNum = parseFloat(FirstNum);
+            SecondNum = parseFloat(SecondNum);
+        Ans = FirstNum + SecondNum;
+       document.getElementById('spAns').innerHTML = Ans;
+      }
       
+      function fnSubtract(){
+      	let Ans=0;
+        let  FirstNum = document.getElementById('txtnum1').value;
+        let  SecondNum = document.getElementById('txtnum2').value;
+        FirstNum = parseFloat(FirstNum);
+            SecondNum = parseFloat(SecondNum);
+        Ans = FirstNum - SecondNum;
+       document.getElementById('spAns').innerHTML = Ans;
+      }
     </script>
 
 </head>
@@ -17,19 +35,19 @@
                     <span ></span><span >Calculate sum/product of 2 numbers</span>
                 </div>
                 <div >
-                    <span id="spOption1">Number 1</span><input type="number" id="txtnum1" />
+                    <span >Number 1</span><input type="number" id="txtnum1" />
                 </div>
                 <br>
                 <div >
-                    <span id="spOption2">Number 2</span><input type="number" id="txtnum2" />
+                    <span >Number 2</span><input type="number" id="txtnum2" />
                 </div>
                 <br>
                 <div >
-                    <span id="spOption2">Answer</span><span id="spAns"><span>
+                    <span >Answer</span><span id="spAns" style="margin-left:20px;"><span>
                 </div>
                
-               <input type="button" style="margin-left:20px;margin-top:20px" value="Add" >
-               <input type="button" style="margin-left:20px;margin-top:20px" value="Subtract">
+               <input type="button" style="margin-left:20px;margin-top:20px" value="Add" onclick="fnAdd();">
+               <input type="button" style="margin-left:20px;margin-top:20px" value="Subtract" onclick="fnSubtract();">
 
             </div>
 
