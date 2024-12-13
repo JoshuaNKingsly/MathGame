@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>History Trivia</title>
+    <script type="text/javascript">
+      
+    </script>
+
+</head>
+<body onload="fnloadquestion()">
+    <h2 style ="text-align: center">Math</h2>
+    <div style="border:solid 2px blue; height:auto ; width:90%; margin-left: 5%">
+        <div id="divmain">
+            <div id="divtrivia">
+                <div style="margin-top:30px;margin-left:30px;margin-bottom:30px">
+                    <span ></span><span >Calculate sum/product of 2 numbers</span>
+                </div>
+                <div >
+                    <span id="spOption1">Number 1</span><input type="number" id="txtnum1" />
+                </div>
+                <br>
+                <div >
+                    <span id="spOption2">Number 2</span><input type="number" id="txtnum2" />
+                </div>
+                <br>
+                <div >
+                    <span id="spOption2">Answer</span><span id="spAns"><span>
+                </div>
+               
+               <input type="button" style="margin-left:20px;margin-top:20px" value="Add" >
+               <input type="button" style="margin-left:20px;margin-top:20px" value="Subtract">
+
+            </div>
+
+            
+
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
